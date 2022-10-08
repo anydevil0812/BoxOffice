@@ -105,7 +105,7 @@ final_table1 = table[table['영화명'] == number1]
 
 print(final_table1)
 
-# 국내 박스오피스 Top 5 선 그래프 생성
+# 국내 박스오피스 선 그래프 생성
 pio.templates.default = "plotly_dark"
 graph = go.Scatter(x=final_table1['기준 날짜'], y=final_table1['일일 관객수'], line={'color':'red','width':2})
 layout = go.Layout(title='국내 박스오피스 1위 영화 관객수 추이',font={'family':'Malgun Gothic', 'size':20},
