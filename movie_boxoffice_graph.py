@@ -1,5 +1,5 @@
-# Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성
-import re
+# Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 int)
+import re 
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
