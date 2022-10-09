@@ -2158,8 +2158,8 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='79' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97866' id='78' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='76' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
                 <zone h='8400' id='14' type-v2='title' w='100000' x='0' y='0'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2306,8 +2306,8 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='79' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97866' id='78' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='76' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
                 <zone h='8400' id='14' type-v2='title' w='100000' x='0' y='0'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2454,8 +2454,8 @@
           </layout-options>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='86' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97866' id='85' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
+            <zone h='100000' id='84' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='83' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
                 <zone h='8400' id='14' type-v2='title' w='100000' x='0' y='0'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2544,8 +2544,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97866' id='11' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='9' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
                 <zone fixed-size='280' h='97866' id='3' is-fixed='true' name='박스오피스 표' w='98770' x='615' y='1067'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
