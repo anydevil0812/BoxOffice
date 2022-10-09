@@ -1,4 +1,4 @@
-# 국내 박스오피스 순위 생성 파일
+# 국내 박스오피스 순위 확인 파일
 import re
 from bs4 import BeautifulSoup
 import requests
@@ -6,6 +6,8 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.io as pio
 from datetime import date, timedelta
+import warnings
+warnings.filterwarnings(action='ignore')
 
 # 5일간의 날짜 목록
 date_list = []
@@ -35,6 +37,8 @@ def crawling_boxoffice(date, keyword):
     if keyword == 'rank': # 순위
         rule = re.compile('(?<=\<rank>)(.*?)(?=<\/rank>)')
         final = rule.findall(factor)
+        for i in range(len(final)):
+            final[i] += "위"
         return final
 
     if keyword == 'movieNm': # 영화명
@@ -50,68 +54,62 @@ def crawling_boxoffice(date, keyword):
     if keyword == 'audiCnt': # 일일 관객수
         rule = re.compile('(?<=\<audiCnt>)(.*?)(?=<\/audiCnt>)')
         final = rule.findall(factor)
-        final = list(map(int, final))
+        for i in range(len(final)):
+            final[i] = f'{int(final[i]):,}명'
         return final
 
     if keyword == 'audiAcc': # 누적 관객수
         rule = re.compile('(?<=\<audiAcc>)(.*?)(?=<\/audiAcc>)')
         final = rule.findall(factor)
-        final = list(map(int, final))
+        for i in range(len(final)):
+            final[i] = f'{int(final[i]):,}명'
         return final
 
-data1 = {"순위" : crawling_boxoffice(date_keyword[0], 'rank'), "영화명" : crawling_boxoffice(date_keyword[0], 'movieNm'),
+# 테이블 확인용 (관객수 데이터 string)
+table_data1 = {"순위" : crawling_boxoffice(date_keyword[0], 'rank'), "영화명" : crawling_boxoffice(date_keyword[0], 'movieNm'),
         "개봉일" : crawling_boxoffice(date_keyword[0], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[0], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[0], 'audiAcc'), "기준 날짜" : date_list[0]}
 
-data2 = {"순위" : crawling_boxoffice(date_keyword[1], 'rank'), "영화명" : crawling_boxoffice(date_keyword[1], 'movieNm'),
+table_data2 = {"순위" : crawling_boxoffice(date_keyword[1], 'rank'), "영화명" : crawling_boxoffice(date_keyword[1], 'movieNm'),
         "개봉일" : crawling_boxoffice(date_keyword[1], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[1], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[1], 'audiAcc'), "기준 날짜" : date_list[1]}
 
-data3 = {"순위" : crawling_boxoffice(date_keyword[2], 'rank'), "영화명" : crawling_boxoffice(date_keyword[2], 'movieNm'),
+table_data3 = {"순위" : crawling_boxoffice(date_keyword[2], 'rank'), "영화명" : crawling_boxoffice(date_keyword[2], 'movieNm'),
         "개봉일" : crawling_boxoffice(date_keyword[2], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[2], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[2], 'audiAcc'), "기준 날짜" : date_list[2]}
 
-data4 = {"순위" : crawling_boxoffice(date_keyword[3], 'rank'), "영화명" : crawling_boxoffice(date_keyword[3], 'movieNm'),
+table_data4 = {"순위" : crawling_boxoffice(date_keyword[3], 'rank'), "영화명" : crawling_boxoffice(date_keyword[3], 'movieNm'),
         "개봉일" : crawling_boxoffice(date_keyword[3], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[3], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[3], 'audiAcc'), "기준 날짜" : date_list[3]}
 
-data5 = {"순위" : crawling_boxoffice(date_keyword[4], 'rank'), "영화명" : crawling_boxoffice(date_keyword[4], 'movieNm'),
+table_data5 = {"순위" : crawling_boxoffice(date_keyword[4], 'rank'), "영화명" : crawling_boxoffice(date_keyword[4], 'movieNm'),
         "개봉일" : crawling_boxoffice(date_keyword[4], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[4], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[4], 'audiAcc'), "기준 날짜" : date_list[4]}
-# data = {"순위" : crawling_boxoffice('rank'), "영화명" : crawling_boxoffice('movieNm'), "개봉일" : crawling_boxoffice('openDt'),
-#         "일일 관객수" : crawling_boxoffice('audiCnt'), "누적 관객수" : crawling_boxoffice('audiAcc')}
 
-table1 = pd.DataFrame(data1)
-
-
-table2 = pd.DataFrame(data2)
-
-
-table3 = pd.DataFrame(data3)
-
-
-table4 = pd.DataFrame(data4)
-
-
-table5 = pd.DataFrame(data5)
-
+table1 = pd.DataFrame(table_data1) # 5일전 기준 박스오피스
+table2 = pd.DataFrame(table_data2) # 4일전 기준 박스오피스
+table3 = pd.DataFrame(table_data3) # 3일전 기준 박스오피스
+table4 = pd.DataFrame(table_data4) # 2일전 기준 박스오피스
+table5 = pd.DataFrame(table_data5) # 어제 박스오피스
 
 table = pd.concat([table1, table2, table3, table4, table5])
-print(table)
+table.to_csv('data_table.csv', index=False)
 
-number1 = crawling_boxoffice(date_keyword[4], 'movieNm')[0] # 어제 기준 박스오피스 1위 작품
+table_number1 = crawling_boxoffice(date_keyword[4], 'movieNm')[0] # 어제 기준 박스오피스 1위 작품
+final_table1 = table[table['영화명'] == table_number1]
 
-final_table1 = table[table['영화명'] == number1]
+table_number2 = crawling_boxoffice(date_keyword[4], 'movieNm')[1] # 어제 기준 박스오피스 2위 작품
+final_table2 = table[table['영화명'] == table_number2]
 
-print(final_table1)
+table_number3 = crawling_boxoffice(date_keyword[4], 'movieNm')[2] # 어제 기준 박스오피스 3위 작품
+final_table3 = table[table['영화명'] == table_number3]
 
-# 국내 박스오피스 선 그래프 생성
-pio.templates.default = "plotly_dark"
-graph = go.Scatter(x=final_table1['기준 날짜'], y=final_table1['일일 관객수'], line={'color':'red','width':2})
-layout = go.Layout(title='국내 박스오피스 1위 영화 관객수 추이',font={'family':'Malgun Gothic', 'size':20},
-                   xaxis={'title':'날짜'},yaxis={'title':'관객수'},width=1200,height=700)
-fig = go.Figure(data=graph, layout=layout)
-fig.update_layout(title_x=0.5) # 제목 가운데 정렬
-fig.update_xaxes(dtick="D1", tickformat='%Y %m %d') # 날짜 Oct처럼 영어 안나오고 숫자로만 나오게 + 간격은 일간격으로
-fig.update_yaxes(tickformat=',') # Y축 데이터 k없이 ,으로 간단하게 표시
-fig.show()
+table_number4 = crawling_boxoffice(date_keyword[4], 'movieNm')[3] # 어제 기준 박스오피스 4위 작품
+final_table4 = table[table['영화명'] == table_number4]
+
+table_number5 = crawling_boxoffice(date_keyword[4], 'movieNm')[4] # 어제 기준 박스오피스 5위 작품
+final_table5 = table[table['영화명'] == table_number5]
+
+final_table1.to_csv('number1_table.csv', index=False)
+final_table2.to_csv('number2_table.csv', index=False)
+final_table3.to_csv('number3_table.csv', index=False)

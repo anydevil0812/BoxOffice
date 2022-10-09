@@ -1,0 +1,1314 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0916.1526                               -->
+<workbook original-version='18.1' source-build='2022.2.2 (20222.22.0916.1526)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='number1' inline='true' name='federated.0zercxf1jhis5m19d57sm0r7nidt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='number1' name='textscan.1fdk2sl1i15pna1187dpb1ug7f23'>
+            <connection class='textscan' directory='C:/Users/이승기/OneDrive/바탕 화면/BoxOffice' filename='number1.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='number2' name='textscan.0kh6itf0r82r2416ds7od1vx3dps'>
+            <connection class='textscan' directory='C:/Users/이승기/OneDrive/바탕 화면/BoxOffice' filename='number2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1fdk2sl1i15pna1187dpb1ug7f23' name='number1.csv' table='[number1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='순위' ordinal='0' />
+            <column datatype='string' name='영화명' ordinal='1' />
+            <column datatype='date' name='개봉일' ordinal='2' />
+            <column datatype='integer' name='일일 관객수' ordinal='3' />
+            <column datatype='integer' name='누적 관객수' ordinal='4' />
+            <column datatype='date' name='기준 날짜' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1fdk2sl1i15pna1187dpb1ug7f23' name='number1.csv' table='[number1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='순위' ordinal='0' />
+            <column datatype='string' name='영화명' ordinal='1' />
+            <column datatype='date' name='개봉일' ordinal='2' />
+            <column datatype='integer' name='일일 관객수' ordinal='3' />
+            <column datatype='integer' name='누적 관객수' ordinal='4' />
+            <column datatype='date' name='기준 날짜' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>순위</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[순위]</local-name>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias>순위</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number1.csv_00AF083F5B1A482893A7835540F934FD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영화명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영화명]</local-name>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias>영화명</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number1.csv_00AF083F5B1A482893A7835540F934FD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>개봉일</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[개봉일]</local-name>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias>개봉일</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number1.csv_00AF083F5B1A482893A7835540F934FD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>일일 관객수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[일일 관객수]</local-name>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias>일일 관객수</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number1.csv_00AF083F5B1A482893A7835540F934FD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>누적 관객수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[누적 관객수]</local-name>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias>누적 관객수</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number1.csv_00AF083F5B1A482893A7835540F934FD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 날짜</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[기준 날짜]</local-name>
+            <parent-name>[number1.csv]</parent-name>
+            <remote-alias>기준 날짜</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number1.csv_00AF083F5B1A482893A7835540F934FD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0zercxf1jhis5m19d57sm0r7nidt].[max:누적 관객수:qk]&quot;' value='누적 관객수' />
+        </aliases>
+      </column>
+      <column caption='계산1' datatype='integer' name='[Calculation_1539386665225437189]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[누적 관객수]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='number1.csv' datatype='table' name='[__tableau_internal_object_id__].[number1.csv_00AF083F5B1A482893A7835540F934FD]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[누적 관객수]' role='measure' type='quantitative' />
+      <column-instance column='[누적 관객수]' derivation='Max' name='[max:누적 관객수:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='순위' />
+        <field-sort-custom-order field='영화명' />
+        <field-sort-custom-order field='개봉일' />
+        <field-sort-custom-order field='일일 관객수' />
+        <field-sort-custom-order field='누적 관객수' />
+        <field-sort-custom-order field='Calculation_1539386665225437189' />
+        <field-sort-custom-order field='기준 날짜' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='number1.csv' id='number1.csv_00AF083F5B1A482893A7835540F934FD'>
+            <properties context=''>
+              <relation connection='textscan.1fdk2sl1i15pna1187dpb1ug7f23' name='number1.csv' table='[number1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='순위' ordinal='0' />
+                  <column datatype='string' name='영화명' ordinal='1' />
+                  <column datatype='date' name='개봉일' ordinal='2' />
+                  <column datatype='integer' name='일일 관객수' ordinal='3' />
+                  <column datatype='integer' name='누적 관객수' ordinal='4' />
+                  <column datatype='date' name='기준 날짜' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='data' inline='true' name='federated.145wvkl1ul84bl14nrgy61qbif35' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='number1' name='textscan.1qcua2x13b90221887j7y0hrw88y'>
+            <connection class='textscan' directory='C:/Users/이승기/OneDrive/바탕 화면/BoxOffice' filename='number1.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='data_table' name='textscan.16puc4h14dpzyu15pe7b01f155db'>
+            <connection class='textscan' directory='C:/Users/이승기/OneDrive/바탕 화면/BoxOffice' filename='data_table.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.16puc4h14dpzyu15pe7b01f155db' name='number2.csv' table='[number2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='순위' ordinal='0' />
+            <column datatype='string' name='영화명' ordinal='1' />
+            <column datatype='date' name='개봉일' ordinal='2' />
+            <column datatype='integer' name='일일 관객수' ordinal='3' />
+            <column datatype='integer' name='누적 관객수' ordinal='4' />
+            <column datatype='date' name='기준 날짜' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.16puc4h14dpzyu15pe7b01f155db' name='number2.csv' table='[number2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='순위' ordinal='0' />
+            <column datatype='string' name='영화명' ordinal='1' />
+            <column datatype='date' name='개봉일' ordinal='2' />
+            <column datatype='integer' name='일일 관객수' ordinal='3' />
+            <column datatype='integer' name='누적 관객수' ordinal='4' />
+            <column datatype='date' name='기준 날짜' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>순위</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[순위]</local-name>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias>순위</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영화명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[영화명]</local-name>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias>영화명</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>개봉일</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[개봉일]</local-name>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias>개봉일</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>일일 관객수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[일일 관객수]</local-name>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias>일일 관객수</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>누적 관객수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[누적 관객수]</local-name>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias>누적 관객수</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준 날짜</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[기준 날짜]</local-name>
+            <parent-name>[number2.csv]</parent-name>
+            <remote-alias>기준 날짜</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Abc제거' datatype='string' name='[Calculation_795448302126305280]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CHAR(32)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='number2.csv' datatype='table' name='[__tableau_internal_object_id__].[number2.csv_BBB2D5C8BC524FF6B786657259E63A26]' role='measure' type='quantitative' />
+      <column caption='개봉' datatype='date' name='[개봉일]' role='dimension' type='ordinal' />
+      <column caption='누적 관객수1' datatype='integer' name='[누적 관객수]' role='measure' type='quantitative' />
+      <column caption='순위1' datatype='string' name='[순위]' role='dimension' type='nominal' />
+      <column caption='영화명1' datatype='string' name='[영화명]' role='dimension' type='nominal' />
+      <column caption='일일 관객수1' datatype='integer' name='[일일 관객수]' role='dimension' type='ordinal' />
+      <mapped-images>
+        <mapped-image caption='1' expression='file:///C:/Users/이승기/OneDrive/바탕 화면/1.jpg' name='[MappedImage1]'>
+          <mapping bottom='0' left='0' right='10' top='10' x='[일일 관객수]' y='[일일 관객수]' />
+          <groupfilter function='crossjoin'>
+            <groupfilter function='member' level='[영화명]' member='%null%' />
+          </groupfilter>
+        </mapped-image>
+      </mapped-images>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='number2.csv' id='number2.csv_BBB2D5C8BC524FF6B786657259E63A26'>
+            <properties context=''>
+              <relation connection='textscan.16puc4h14dpzyu15pe7b01f155db' name='number2.csv' table='[number2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='순위' ordinal='0' />
+                  <column datatype='string' name='영화명' ordinal='1' />
+                  <column datatype='date' name='개봉일' ordinal='2' />
+                  <column datatype='integer' name='일일 관객수' ordinal='3' />
+                  <column datatype='integer' name='누적 관객수' ordinal='4' />
+                  <column datatype='date' name='기준 날짜' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='관객수 그래프'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5'>박스오피스 1위 일일관객수 추이</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='number1' name='federated.0zercxf1jhis5m19d57sm0r7nidt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zercxf1jhis5m19d57sm0r7nidt'>
+            <column-instance column='[일일 관객수]' derivation='Sum' name='[sum:일일 관객수:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[기준 날짜]' derivation='Day-Trunc' name='[tdy:기준 날짜:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[기준 날짜]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[일일 관객수]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='auto-subtitle' class='0' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[tdy:기준 날짜:qk]' scope='cols' value='false' />
+            <format attr='title' class='0' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[tdy:기준 날짜:qk]' scope='cols' value='날짜' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#4e79a7' />
+            <format attr='border-color' scope='rows' value='#ff9d9a' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='background-color' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]' value='#000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='font-family' data-class='total' scope='rows' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#aaff00' />
+            <format attr='font-weight' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[tdy:기준 날짜:qk]' value='bold' />
+            <format attr='color' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[tdy:기준 날짜:qk]' value='#76b7b2' />
+            <format attr='font-family' scope='rows' value='Tableau Medium' />
+            <format attr='font-family' scope='cols' value='Tableau Medium' />
+            <format attr='font-family' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[tdy:기준 날짜:qk]' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-color' scope='rows' value='#333333' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='border-color' value='#a0cbe8' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#a0cbe88e' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#b6992d' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-weight' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]' value='bold' />
+            <format attr='color' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]' value='#499894' />
+            <format attr='font-family' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]' value='Tableau Book' />
+            <format attr='font-size' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e10741' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]</rows>
+        <cols>[federated.0zercxf1jhis5m19d57sm0r7nidt].[tdy:기준 날짜:qk]</cols>
+      </table>
+      <simple-id uuid='{BFCDA515-BF89-4896-9A68-71C941F3B9C5}' />
+    </worksheet>
+    <worksheet name='관객수 표'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='number1' name='federated.0zercxf1jhis5m19d57sm0r7nidt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zercxf1jhis5m19d57sm0r7nidt'>
+            <column-instance column='[누적 관객수]' derivation='Max' name='[max:누적 관객수:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[영화명]' derivation='None' name='[none:영화명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[일일 관객수]' derivation='Sum' name='[sum:일일 관객수:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[누적 관객수]' role='measure' type='quantitative' />
+            <column datatype='string' name='[영화명]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[일일 관객수]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zercxf1jhis5m19d57sm0r7nidt].[max:누적 관객수:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0zercxf1jhis5m19d57sm0r7nidt].[sum:일일 관객수:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zercxf1jhis5m19d57sm0r7nidt].[max:누적 관객수:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:영화명:nk]' />
+              <groupfilter function='member' level='[none:영화명:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]</column>
+            <column>[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]' value='216' />
+            <format attr='height' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='132' />
+            <format attr='height' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]' value='45' />
+            <format attr='width' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='238' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+            <format attr='text-align' value='center' />
+            <format attr='border-color' scope='rows' value='#f28e2b' />
+            <format attr='border-color' scope='cols' value='#f28e2b' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='font-size' data-class='total' scope='cols' value='11' />
+            <format attr='font-size' data-class='total' scope='rows' value='9' />
+            <format attr='font-size' data-class='subtotal' value='11' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]' value='236' />
+            <format attr='height' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='56' />
+            <format attr='background-color' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[max:누적 관객수:qk]' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' scope='rows' value='#f28e2b' />
+            <format attr='border-color' scope='cols' value='#f28e2b' />
+            <format attr='font-size' data-class='total' scope='cols' value='12' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='false' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' value='15' />
+            <format attr='font-size' scope='rows' value='12' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' scope='rows' value='#f28e2b' />
+            <format attr='border-color' scope='cols' value='#f28e2b' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#edc948' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#f28e2b' />
+            <format attr='stroke-color' scope='cols' value='#f28e2b' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0zercxf1jhis5m19d57sm0r7nidt].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zercxf1jhis5m19d57sm0r7nidt].[:Measure Names]</rows>
+        <cols>[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]</cols>
+      </table>
+      <simple-id uuid='{19C0A631-2767-47C7-8DE2-1E0D59823706}' />
+    </worksheet>
+    <worksheet name='순위'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='number1' name='federated.0zercxf1jhis5m19d57sm0r7nidt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zercxf1jhis5m19d57sm0r7nidt'>
+            <column-instance column='[영화명]' derivation='None' name='[none:영화명:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[영화명]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='161' />
+            <format attr='width' value='346' />
+            <format attr='height' value='72' />
+            <format attr='vertical-align' data-class='total' scope='cols' value='center' />
+            <format attr='text-align' value='center' />
+            <format attr='border-color' value='#e15759' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='14' />
+            <format attr='border-color' scope='cols' value='#f28e2b' />
+            <format attr='border-color' scope='rows' value='#f28e2b' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='64' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' value='#e15759' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='cols' value='18' />
+            <format attr='font-size' scope='rows' value='18' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' data-class='total' scope='rows' value='#e15759' />
+            <format attr='border-color' data-class='subtotal' value='#e15759' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffff00' />
+            <format attr='font-size' value='18' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#e15759' />
+            <format attr='stroke-color' scope='cols' value='#e15759' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{58B9C8AE-B27D-41B1-9C3B-9B792EA86F62}' />
+    </worksheet>
+    <worksheet name='시트 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#499894'>어제 기준 국내 박스오피스 순위</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.145wvkl1ul84bl14nrgy61qbif35' />
+          </datasources>
+          <datasource-dependencies datasource='federated.145wvkl1ul84bl14nrgy61qbif35'>
+            <column caption='Abc제거' datatype='string' name='[Calculation_795448302126305280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CHAR(32)' />
+            </column>
+            <column-instance column='[Calculation_795448302126305280]' derivation='None' name='[none:Calculation_795448302126305280:nk]' pivot='key' type='nominal' />
+            <column-instance column='[누적 관객수]' derivation='None' name='[none:누적 관객수:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[순위]' derivation='None' name='[none:순위:nk]' pivot='key' type='nominal' />
+            <column-instance column='[영화명]' derivation='None' name='[none:영화명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[일일 관객수]' derivation='None' name='[none:일일 관객수:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[개봉일]' derivation='Day-Trunc' name='[tdy:개봉일:ok]' pivot='key' type='ordinal' />
+            <column caption='개봉' datatype='date' name='[개봉일]' role='dimension' type='ordinal' />
+            <column caption='누적 관객수1' datatype='integer' name='[누적 관객수]' role='measure' type='quantitative' />
+            <column caption='순위1' datatype='string' name='[순위]' role='dimension' type='nominal' />
+            <column caption='영화명1' datatype='string' name='[영화명]' role='dimension' type='nominal' />
+            <column caption='일일 관객수1' datatype='integer' name='[일일 관객수]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.145wvkl1ul84bl14nrgy61qbif35].[none:누적 관객수:nk]' value='102' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#59a14f' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.145wvkl1ul84bl14nrgy61qbif35].[tdy:개봉일:ok]' value='172' />
+            <format attr='width' field='[federated.145wvkl1ul84bl14nrgy61qbif35].[none:영화명:nk]' value='268' />
+            <format attr='width' field='[federated.145wvkl1ul84bl14nrgy61qbif35].[none:일일 관객수:nk]' value='144' />
+            <format attr='width' field='[federated.145wvkl1ul84bl14nrgy61qbif35].[none:누적 관객수:nk]' value='184' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='normal' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.145wvkl1ul84bl14nrgy61qbif35].[none:Calculation_795448302126305280:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.145wvkl1ul84bl14nrgy61qbif35].[none:순위:nk] / ([federated.145wvkl1ul84bl14nrgy61qbif35].[none:영화명:nk] / ([federated.145wvkl1ul84bl14nrgy61qbif35].[tdy:개봉일:ok] / ([federated.145wvkl1ul84bl14nrgy61qbif35].[none:일일 관객수:nk] / [federated.145wvkl1ul84bl14nrgy61qbif35].[none:누적 관객수:nk]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5EA0C890-1D06-4FA3-983E-797A64E06231}' />
+    </worksheet>
+    <worksheet name='시트 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2AE73FFC-E9DA-403C-B089-AA760D0D28C1}' />
+    </worksheet>
+    <worksheet name='영화제목'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='number1' name='federated.0zercxf1jhis5m19d57sm0r7nidt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zercxf1jhis5m19d57sm0r7nidt'>
+            <column-instance column='[영화명]' derivation='None' name='[none:영화명:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[영화명]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='161' />
+            <format attr='width' value='346' />
+            <format attr='height' value='72' />
+            <format attr='vertical-align' data-class='total' scope='cols' value='center' />
+            <format attr='text-align' value='center' />
+            <format attr='border-color' value='#e15759' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='14' />
+            <format attr='border-color' scope='cols' value='#f28e2b' />
+            <format attr='border-color' scope='rows' value='#f28e2b' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' value='64' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' value='#e15759' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' scope='cols' value='18' />
+            <format attr='font-size' scope='rows' value='18' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' data-class='total' scope='rows' value='#e15759' />
+            <format attr='border-color' data-class='subtotal' value='#e15759' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffff00' />
+            <format attr='font-size' value='18' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#e15759' />
+            <format attr='stroke-color' scope='cols' value='#e15759' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0zercxf1jhis5m19d57sm0r7nidt].[none:영화명:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FC088807-6682-49E6-B2C1-2EE73296310D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='대시보드 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>어제 기준 국내 박스오피스 1위  그래프 차트</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='font-size' value='20' />
+        </style-rule>
+      </style>
+      <size maxheight='750' maxwidth='1300' minheight='750' minwidth='1300' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='17' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='13' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+              <zone h='8400' id='14' type-v2='title' w='100000' x='0' y='0'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91600' id='9' param='vert' type-v2='layout-flow' w='100000' x='0' y='8400'>
+                <zone h='91600' id='7' type-v2='layout-basic' w='100000' x='0' y='8400'>
+                  <zone h='91600' id='3' name='관객수 그래프' show-title='false' w='67000' x='33000' y='8400'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='60922' id='6' is-scaled='1' param='C:/Users/이승기/OneDrive/바탕 화면/1.jpg' type-v2='bitmap' w='33000' x='0' y='8400'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#000000' />
+                    </zone-style>
+                  </zone>
+                  <zone h='17734' id='15' name='관객수 표' show-title='false' w='33000' x='0' y='82266'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='12944' id='19' name='영화제목' w='33000' x='0' y='69322'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='0' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff'>10/7 국내 박스오피스  그래프 차트</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97866' id='37' param='vert' type-v2='layout-flow' w='98770' x='615' y='1067'>
+                <zone h='8400' id='14' type-v2='title' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60922' id='6' is-fixed='true' is-scaled='1' param='C:/Users/이승기/OneDrive/바탕 화면/1.jpg' type-v2='bitmap' w='33000' x='0' y='8400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91600' id='3' is-fixed='true' name='관객수 그래프' show-title='false' w='67000' x='33000' y='8400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='89' h='12944' id='19' is-fixed='true' name='영화제목' w='33000' x='0' y='69322'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='125' h='17734' id='15' is-fixed='true' name='관객수 표' show-title='false' w='33000' x='0' y='82266'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{390CAC37-E509-477D-B0BE-FEBF6ADCEDD4}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='대시보드 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='시트 5' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8AB4A643-2097-45B3-B4D2-E58437FBA2F1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='75'>
+    <window class='worksheet' name='관객수 그래프'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBF16D72-3634-4945-98F0-C284FF0C32A3}' />
+    </window>
+    <window class='worksheet' name='영화제목'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{72E6C278-A425-40E0-9527-20E43BCF2DAE}' />
+    </window>
+    <window class='worksheet' name='순위'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B63E382D-B799-4349-95B7-05063B7D73A2}' />
+    </window>
+    <window class='worksheet' name='관객수 표'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{63C9AB53-318C-4C27-A8E2-F15203FE49A2}' />
+    </window>
+    <window class='dashboard' name='대시보드 1'>
+      <viewpoints>
+        <viewpoint name='관객수 그래프'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='관객수 표'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='영화제목'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true'>
+        <device name='Generic Desktop Monitor' type='Desktop' />
+        <device name='Samsung Galaxy S Series' type='Phone' />
+      </device-preview>
+      <simple-id uuid='{C56FB26B-34F5-40DB-BAFB-3BCF6A10D846}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F123A01-8B9B-497A-8B66-7FCBC285AF85}' />
+    </window>
+    <window class='worksheet' name='시트 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9BC40BB-CF2E-4D2D-9044-E73198A73841}' />
+    </window>
+    <window class='dashboard' name='대시보드 2'>
+      <viewpoints>
+        <viewpoint name='시트 5' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A92B708C-E4A8-45EF-8933-C182185C441A}' />
+    </window>
+  </windows>
+</workbook>
