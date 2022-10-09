@@ -1,4 +1,4 @@
-# Tableau 국내 박스오피스 테이블 데이터 csv파일 생성용
+# Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성
 import re
 from bs4 import BeautifulSoup
 import requests
