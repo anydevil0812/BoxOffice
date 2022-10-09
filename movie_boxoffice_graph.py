@@ -1,4 +1,4 @@
-# 국내 박스오피스 순위 생성 파일
+# Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 int)
 import re
 from bs4 import BeautifulSoup
 import requests
@@ -86,9 +86,7 @@ table2 = pd.DataFrame(data2)
 table3 = pd.DataFrame(data3)
 table4 = pd.DataFrame(data4)
 table5 = pd.DataFrame(data5)
-
 table = pd.concat([table1, table2, table3, table4, table5])
-table.to_csv('data.csv', index=False) # 지난 5일간의 박스오피스 순위 데이터 csv 파일
 
 number1 = crawling_boxoffice(date_keyword[4], 'movieNm')[0] # 어제 기준 박스오피스 1위 작품
 final_table1 = table[table['영화명'] == number1]
