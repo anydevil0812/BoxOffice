@@ -1,4 +1,4 @@
-# Tableau 국내 박스오피스 테이블 생성용 데이터 csv파일 생성 (관객수 데이터 string)
+# 국내 박스오피스 순위 확인 파일
 import re
 from bs4 import BeautifulSoup
 import requests
