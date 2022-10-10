@@ -1,4 +1,4 @@
-# Tableau 어제 기준 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 str)
+# Tableau 어제 기준 국내 박스오피스 테이블 생성용 데이터 csv파일 생성 (관객수 데이터 str)
 import re
 from bs4 import BeautifulSoup
 import requests
@@ -51,7 +51,7 @@ def crawling_boxoffice(keyword):
             final[i] = f'{int(final[i]):,}명'
         return final
 
-# 테이블 확인용 csv 파일 생성 (관객수 데이터 str)
+# 테이블 생성용 csv 파일 생성 (관객수 데이터 str)
 table_data = {"순위" : crawling_boxoffice('rank'), "영화명" : crawling_boxoffice('movieNm'),
         "개봉일" : crawling_boxoffice('openDt'), "일일 관객수" : crawling_boxoffice('audiCnt'),
         "누적 관객수" : crawling_boxoffice('audiAcc'), "기준 날짜" : yesterday}
