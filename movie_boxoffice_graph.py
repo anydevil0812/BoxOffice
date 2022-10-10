@@ -3,8 +3,6 @@ import re
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
-import plotly.graph_objects as go
-import plotly.io as pio
 from datetime import date, timedelta
 
 # 5일간의 날짜 목록
@@ -18,8 +16,6 @@ date_list = list(map(str, date_list))
 date_keyword = []
 for i in range(len(date_list)):
     date_keyword.append(date_list[i].replace('-', ''))
-
-keywords = ['rank', 'movieNm', 'openDt', 'audiCnt', 'audiAcc']
 
 # 영화진흥위원회_영화박스오피스 DB OPEN API 이용하여 크롤링
 def crawling_boxoffice(date, keyword):
@@ -61,6 +57,7 @@ def crawling_boxoffice(date, keyword):
         final = list(map(int, final))
         return final
 
+# 박스오피스 순위 데이터 (5일전 ~ 어제)
 data1 = {"순위" : crawling_boxoffice(date_keyword[0], 'rank'), "영화명" : crawling_boxoffice(date_keyword[0], 'movieNm'),
         "개봉일" : crawling_boxoffice(date_keyword[0], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[0], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[0], 'audiAcc'), "기준 날짜" : date_list[0]}
@@ -81,11 +78,14 @@ data5 = {"순위" : crawling_boxoffice(date_keyword[4], 'rank'), "영화명" : c
         "개봉일" : crawling_boxoffice(date_keyword[4], 'openDt'), "일일 관객수" : crawling_boxoffice(date_keyword[4], 'audiCnt'),
         "누적 관객수" : crawling_boxoffice(date_keyword[4], 'audiAcc'), "기준 날짜" : date_list[4]}
 
+# 박스오피스 순위 데이터프레임 (5일전 ~ 어제)
 table1 = pd.DataFrame(data1)
 table2 = pd.DataFrame(data2)
 table3 = pd.DataFrame(data3)
 table4 = pd.DataFrame(data4)
 table5 = pd.DataFrame(data5)
+
+# 5일전부터 어제까지의 박스오피스 순위 데이터프레임
 table = pd.concat([table1, table2, table3, table4, table5])
 
 number1 = crawling_boxoffice(date_keyword[4], 'movieNm')[0] # 어제 기준 박스오피스 1위 작품
