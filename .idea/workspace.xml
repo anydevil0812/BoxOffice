@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a65b656e-a64e-4414-834a-65708c8c88b8" name="Changes" comment="Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 int)">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="a65b656e-a64e-4414-834a-65708c8c88b8" name="Changes" comment="Chanege">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_table.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_boxoffice_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_boxoffice_graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_boxoffice_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_boxoffice_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/number1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number1_table.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/number2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/number2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number2_table.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/number3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/number3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number3_table.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/국내 박스오피스 그래프 대시보드 테스트용.twb" beforeDir="false" afterPath="$PROJECT_DIR$/국내 박스오피스 그래프 대시보드 테스트용.twb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/국내 박스오피스 그래프 대시보드.twb" beforeDir="false" afterPath="$PROJECT_DIR$/국내 박스오피스 그래프 대시보드.twb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/국내 박스오피스 확인.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/table_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/table_data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.movie_boxoffice_table">
+  <component name="RunManager" selected="Python.movie_boxoffice_graph">
     <configuration name="movie_boxoffice_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BoxOffice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.movie_boxoffice_table" />
         <item itemvalue="Python.movie_boxoffice_graph" />
+        <item itemvalue="Python.movie_boxoffice_table" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +121,63 @@
       <option name="project" value="LOCAL" />
       <updated>1665359763625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 str)">
+      <created>1665359857620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359857620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="국내 박스오피스 순위 tableau 완성 파일">
+      <created>1665359929942</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359929942</updated>
+    </task>
+    <task id="LOCAL-00006" summary="국내 박스오피스 순위 tableau 임시 테스트용 파일">
+      <created>1665359949541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359949541</updated>
+    </task>
+    <task id="LOCAL-00007" summary="어제 기준 박스오피스 1위 작품 5일간 관객수 추이 csv 파일">
+      <created>1665359981615</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359981615</updated>
+    </task>
+    <task id="LOCAL-00008" summary="어제 기준 박스오피스 2위 작품 5일간 관객수 추이 csv 파일">
+      <created>1665359993255</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359993255</updated>
+    </task>
+    <task id="LOCAL-00009" summary="어제 기준 박스오피스 3위 작품 5일간 관객수 추이 csv 파일">
+      <created>1665360007818</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665360007818</updated>
+    </task>
+    <task id="LOCAL-00010" summary="영화 포스터">
+      <created>1665360062476</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665360062476</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Chanege">
+      <created>1665360095602</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665360095602</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +195,15 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="성공" />
     <MESSAGE value="Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 int)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 int)" />
+    <MESSAGE value="Tableau 국내 박스오피스 그래프 생성용 데이터 csv파일 생성 (관객수 데이터 str)" />
+    <MESSAGE value="국내 박스오피스 순위 tableau 완성 파일" />
+    <MESSAGE value="국내 박스오피스 순위 tableau 임시 테스트용 파일" />
+    <MESSAGE value="어제 기준 박스오피스 1위 작품 5일간 관객수 추이 csv 파일" />
+    <MESSAGE value="어제 기준 박스오피스 2위 작품 5일간 관객수 추이 csv 파일" />
+    <MESSAGE value="어제 기준 박스오피스 3위 작품 5일간 관객수 추이 csv 파일" />
+    <MESSAGE value="영화 포스터" />
+    <MESSAGE value="Chanege" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chanege" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
